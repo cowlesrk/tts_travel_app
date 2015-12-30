@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Travel</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous">
+
+</head>
+<body>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="/welcome/index">Home</a></li>
+  <li role="presentation" class="active"><a href="/destinations">Destinations</a></li>
+</ul>
+
+<%= yield %>
+
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyASXpcAcBDkP3D50Wwk2AmsGDt8f58I_-4&callback=initMap">
+    </script>
+
+</body>
+</html>
